@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Music Community Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+   <h1 id="title">Music Community Survey Form</h1>
+   <p id="description"><em>Thank you for your contribution</em></p>
+   <form id="survey-form">
+     <fieldset>
+       <label for="name" id="name-label">Name: <input id="name" type="text" name="name" placeholder="Your name" required></label>
+       <label for="email" id="email-label">Email: <input id="email" type="email" name="email" placeholder="xxx@xxx.com" required></label>
+       <label for="number" id="number-label">Age: <input id="number" type="number" name="age" min="0" max="99" placeholder="21" required></label>
+     </fieldset>
+     <fieldset>
+       <label for="referrer">How long have you been in the music industry? 
+         <select id="dropdown" name="dropdown">
+<option value="">(select one)</option>
+            <option value="1">Less 1 year</option>
+            <option value="2">Less 3 years</option>
+            <option value="3">Less 10 years</option>
+            <option value="4">Above 10 years</option>
+           </select>
+       </label>
+       </fieldset>
+       <fieldset>
+         <legend class="ld1">What kind of profession you are?</legend>
+        <label for="music Producer"><input id="music Producer" type="radio" name="type" class="inline" checked value="music Producer"/> Music Producer</label>
+        <label for="artist"><input id="artist" type="radio" name="type" class="inline" value="artist"/> Singer/Rapper</label>
+        <label for="artist"><input id="artist" type="radio" name="type" class="inline" value="artist"/> Pianist</label>
+        <label for="artist"><input id="artist" type="radio" name="type" class="inline" value="artist"/> Saxophonist</label>
+        <label for="artist"><input id="artist" type="radio" name="type" class="inline" value="artist"/> Guitarist</label>
+        <label for="artist"><input id="artist" type="radio" name="type" class="inline" value="artist"/> Bassist</label>
+        <label for="artist"><input id="artist" type="radio" name="type" class="inline" value="artist"/> Drummer</label>
+         </fieldset>
+         <fieldset>
+             <legend class="ld2">What kind of memberships you are?</legend>
+         <label class="l1" for="monthly"><input id="monthly" type="checkbox" required name="monthly" value="1"> Monthly</label>
+         <label class="l1" for="yearly"><input id="yearly" type="checkbox" required name="yearly" value="2"> Yearly</label>
+         <label class="l1" for="not now"><input id="not now" type="checkbox" required name="not now" value="3"> Guest</label>
+         </fielset>
+         <label class="l2" for="suggestions">Any other suggestions:
+          <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="You know what..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+     </form>
+</body>
+</html>
